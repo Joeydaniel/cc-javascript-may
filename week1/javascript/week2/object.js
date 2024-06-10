@@ -28,23 +28,32 @@ television['color'] = 'silver';
 television['make'] = 'StartTimes';
 
 
-console.log(table.isFoldable);
+// console.log(table.isFoldable);
 
 table['colorOfLegs'] = 'grey';
 table['weight'] = 1.2;
 
-console.log(table.noOfLegs + " " + table.color + " " + table.weight);
+// console.log(table.noOfLegs + " " + table.color + " " + table.weight);
+
+const allObjects = {}
 
 for (items in table){
-    console.log(table[items]);
+    // console.log(table[items]);
+    allObjects[items] = table[items]
 }
 
 console.log('\n\n')
 for (properties in fan)
-    console.log(fan[properties]);
+    // console.log(fan[properties]);
+allObjects[properties] = fan[properties]
 
 console.log('\n\n')
 
 
 for (things in television)
-    console.log(television[things]);
+    // console.log(television[things]);
+allObjects[things] = television[things]
+
+console.log(allObjects);
+
+
