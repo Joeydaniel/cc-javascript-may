@@ -12,9 +12,39 @@ const table = {
     height: 0.7,
 }
 
+const fan = {
+    color: 'black',
+    type: 'standing',
+    isRechargable: false,
+    noOfBlades: 3,
+    adjustableHeight: true,
+}
+
+
+const television = {}
+television['type'] = 'flatscreen';
+television['size'] = 55;
+television['color'] = 'silver';
+television['make'] = 'StartTimes';
+
+
 console.log(table.isFoldable);
 
 table['colorOfLegs'] = 'grey';
 table['weight'] = 1.2;
 
 console.log(table.noOfLegs + " " + table.color + " " + table.weight);
+
+for (items in table){
+    console.log(table[items]);
+}
+
+console.log('\n\n')
+for (properties in fan)
+    console.log(fan[properties]);
+
+console.log('\n\n')
+
+
+for (things in television)
+    console.log(television[things]);
