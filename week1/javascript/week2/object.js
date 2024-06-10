@@ -9,4 +9,12 @@ const table = {
     color: 'white',
     material: 'plastic',
     isFoldable: true,
+    height: 0.7,
 }
+
+console.log(table.isFoldable);
+
+table['colorOfLegs'] = 'grey';
+table['weight'] = 1.2;
+
+console.log(table.noOfLegs + " " + table.color + " " + table.weight);
