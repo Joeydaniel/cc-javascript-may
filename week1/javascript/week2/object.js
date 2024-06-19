@@ -57,3 +57,14 @@ allObjects[things] = television[things]
 console.log(allObjects);
 
 
+const radio = {}
+radio['type'] = 'portable';
+radio['color'] = 'blue';
+radio['brand'] = 'LG';
+radio['price'] = '$500';
+radio['version'] = 2000;
+radio['Generation'] = '2024 model'
+console.log(radio); 
+
+
+
